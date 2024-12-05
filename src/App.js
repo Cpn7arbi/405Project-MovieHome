@@ -24,7 +24,7 @@ const App = () => {
 
 
   return(
-    <Router>
+    <Router basename="/405Project-MovieHome">
       <div className='page'>
 
         <Navbar/>

@@ -1,0 +1,127 @@
+.home-container {
+  text-align: center;
+  margin-top: 5rem;
+  animation: fadeIn 1s ease-in-out; /* Fade-in effect for the container */
+}
+
+body{
+  background-color: #1b1b1b;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.home-container h1 {
+  font-size: 2.5rem;
+  color: #eaeaea;
+  margin-bottom: 1.5rem;
+  animation: slideDown 1s ease-in-out; /* Slide-in for the title */
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.home-container input {
+  width: 60%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  font-size: 1rem;
+  animation: slideUp 1s ease-in-out 0.5s; /* Slide-in for the input field */
+  animation-fill-mode: both; /* Retain the final state */
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.home-container button {
+  padding: 0.75rem 1rem;
+  border: none;
+  background-color: cyan;
+  color: #121212;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  animation: slideUp 1s ease-in-out 0.5s; /* Slide-in for the button */
+  animation-fill-mode: both; /* Retain the final state */
+}
+
+.home-container button:hover {
+  background-color: #00bcd4;
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+.random-movie-button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #ff4081;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  animation: slideUp 1s ease-in-out 0.8s; /* Slide-in for the random movie button */
+  animation-fill-mode: both; /* Retain the final state */
+}
+
+.random-movie-button:hover {
+  background-color: #e91e63;
+  transform: scale(1.1);
+}
+
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Adjust space between posters */
+  margin-top: 2rem;
+}
+
+.movie-card {
+  width: 337px; /* Adjust the width of each movie card */
+  height: auto; /* Keep the aspect ratio of the image */
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #2b2b2b;
+}
+
+.movie-poster {
+  width: 100%; /* Make the poster fill the card's width */
+  height: 300px; /* Adjust the height */
+  object-fit: contain; /* Ensure the image covers the area without distortion */
+  border-radius: 5px;
+}
+
+.movie-title {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: bold;
+}

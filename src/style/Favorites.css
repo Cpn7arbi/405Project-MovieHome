@@ -1,0 +1,7 @@
+.favorite-movies-card img {
+    width: 150px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image doesn't stretch */
+    border-radius: 8px; /* Optional: Add rounded corners */
+  }
+  
